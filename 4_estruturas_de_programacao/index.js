@@ -25,7 +25,7 @@
 
 //--- DECLARAÇÃO DE VARIÁVEIS ---//
 
-let nome = "Luma";
+/* let nome = "Luma";
 let laranja = 3;
 
 console.log(nome);
@@ -43,7 +43,7 @@ console.log(laranja * laranja);
 
 laranja = "Lorena";          //mudando o type da variável.
 
-console.log(`Meu nome é ${laranja}`);
+console.log(`Meu nome é ${laranja}`); */
 
 // --------- NOTA IMPORTANTE: só é preciso usar o let na primeira vez, depois disso basta colocar o nome da variável o novo valor. Usando o LET é um DECLARAÇÃO; sem o LET é uma ATRIBUIÇÃO.
 
@@ -52,8 +52,8 @@ console.log(`Meu nome é ${laranja}`);
 
 //--- DECLARAÇÃO DE VÁRIAS VARIÁVEIS DE UMA SÓ VEZ ---//
 
-let um = 1, dois = 2, tres = 3;
-console.log(um + dois + tres);
+/* let um = 1, dois = 2, tres = 3;
+console.log(um + dois + tres); */
 
 
 
@@ -62,14 +62,14 @@ console.log(um + dois + tres);
 
 //Como algumas (poucas) páginas ainda não aceitam LET, devemos sempre no início da página criar o o parse. **Procre ler mais sobre!
 
-var luma = "linda";
+/* var luma = "linda";
 console.log(`Luma Fusco é ${luma}`);
 
 const ip = "27.0.0.1"
 console.log(`O número do IP dessa página é ${ip}`);
 
 luma = "maravilhosa";
-console.log(`Luma Fusco é ${luma}`);
+console.log(`Luma Fusco é ${luma}`); */
 
 //CONST não se pode mudar!
 
@@ -122,7 +122,7 @@ console.log(`Luma Fusco é ${luma}`);
 
 //Muito utilizada! Utilizada para expressões/cálculos matemáticos. Alguns exemplos de Math abaixo. Mas existem muitas outras!!!
 
-let maiorNumero = Math.max(1, 5, 3, 6);
+/* let maiorNumero = Math.max(1, 5, 3, 6);
 console.log(maiorNumero);
 
 let menorNumero = Math.min(1, 5, 3, 6);
@@ -132,7 +132,7 @@ let arredondar = Math.round(5.29651);
 console.log(arredondar);
 
 let arredondarParaCima = Math.ceil(5.29651);
-console.log(arredondarParaCima);
+console.log(arredondarParaCima); */
 
 
 
@@ -153,7 +153,7 @@ console.log(arredondarParaCima);
 
 // iF = SE. Onde algo é a condição imposta por um statement que resulta em um boolean (true ou false). Ex:
 
-let idade = 35;
+/* let idade = 35;
 
 if (idade > 18) {
     console.log("Pode entrar!")
@@ -165,14 +165,14 @@ let name = "Luma";
 if (idade > 20 && name == "Luma") {   //If + operador lógico AND
     console.log("Bem vinda!")
 };
-
+ */
 
 
 //-- ESTRUTURAS DE CONTROLE: Else --//
 
 // Else: caso o IF não seja atendido.
 
-let fruta = "morango";
+/* let fruta = "morango";
 
 if (fruta == "morango") {
     console.log("Adoro morango");
@@ -186,13 +186,13 @@ if (fruta == "morango") {
     console.log("Adoro morango");
 } else {
     console.log("Odeio morango")
-}
+} */
 
 
 
 //-- ESTRUTURAS DE CONTROLE: else if --//
 
-console.log("TESTANDO IF ELSE");
+/* console.log("TESTANDO IF ELSE");
 
 let notaMedia = 2;
 
@@ -203,7 +203,7 @@ if (notaMedia >= 7) {
 } else {
     console.log("Você foi reprovado!")
 };
-
+ */
 
 
 //-- ESTRUTURA DE REPETIÇÃO --//
@@ -214,7 +214,7 @@ if (notaMedia >= 7) {
 //-- ESTRUTURA DE REPETIÇÃO: while --//
 // A idéia é reptir um bloco de código até uma condição ser verdadeira. 
 // Precisamos definir um FIM para o loop não se infinito.
-console.log("TESTANDO WHILE");
+/* console.log("TESTANDO WHILE");
 
 let x = 10;
 
@@ -230,40 +230,123 @@ while (y <= 10) {
     y = y + 1
 };
 
-
+ */
 
 //-- ESTRUTURA DE REPETIÇÃO: for --//
 
 // Semelhante ao while mas permite fazer tudo em uma unica linha. A mais fácil de entender, na opinião do professor.
 // Basta respeitar a ordem: 1.VARIÁVEL 2. CONDIÇÃO 3. INCREMENTO
 
-console.log("TESTANDO FOR");
+/* console.log("TESTANDO FOR");
 
 for (let i = 2; i < 100; i = i * 2) {
     console.log(`O número é i é ${i}`);
 }
-
+ */
 
 
 //-- FORÇANDO A SAIDA DO LOOP: break --//
 
 // Quando precisamos que o loop pare antes de completar seu ciclo
 
-console.log("TESTANDO BREAK");
+/* console.log("TESTANDO BREAK"); 
  
-let chama = "Matheus"
+let nomeTeste = "matheus";
 
-for (let b = 0; b < 10; b = b + 1){
+for(let i = 0; i < 10 ; i = i + 1){
 
-if (b == 3){
-    chama = "Luma";
-}
+    if (i == 3){
+        nomeTeste == "joao";
+    }
+       
+    if(1 == 5 && nomeTeste == "joao"){
+        console.log("pode parar");
+        break;
+    }
 
-if(b == 5 && chama == "Luma") {
-console.log("O nome é Luma, pode parar");
-break;
-}
+    console.log(i);
+} */
 
-console.log(b);
 
-}
+
+//-- UTILIZANDO O CONTINUE --//
+
+// Perminte "pular" apenas uma execução através da palavra reservada CONTINUE
+
+/* console.log('Testando o Continue');
+
+let x = 0
+
+while (x < 11){
+    x = x+1;
+    if (x % 2 == 0) {
+        continue;
+    }
+console.log(x);
+x = x + 1;
+} */
+
+
+
+//-- INCREMENTO --//
+//Há duas formas de representar, por exemplo, um "a = a +1": pode ser "a += 5" (assim soma qualquer número) ou a++ (assim soma só 1)
+
+
+/* console.log('Testando Incremento');
+
+for (a = 0; a < 10; a += 1){
+    console.log(a)
+}; 
+
+for(b = 0; b < 10; b++){
+    console.log(b)
+}; */
+
+/* let numero = 50;
+
+while(numero > 10) {
+
+    console.log(numero);
+
+    numero -= 10;
+} */
+
+
+
+//-- DENCREMENTO --//
+//Há duas formas de representar, por exemplo, um "a = a +1": pode ser "a -= 5" (assim subtrai qualquer número) ou a-- (assim subtrai só 1)
+
+/* console.log('Testando Decremento');
+
+for (a = 50; a > 0; a -= 3){
+    console.log(a)
+}; 
+
+for(b = 10; b > 0; b--){
+    console.log(b)
+}; */
+
+
+
+//-- ESTRUTURA CONDICIONAL: Switch --//
+//Quando há necessidade de vários IFs, podemos usar o switch/case.
+//Para sair do case usamos o BREAK
+//Podemos usar o DEFAULT caso nenhum valor for correspondido
+//Pouco usado, geralmente se usam vários IFs
+
+/* console.log('Testando Switch');
+
+let nome = "Leonardo";
+
+switch(nome){
+    case "João":
+        console.log("O seu nome é João");
+        break;
+    case "Luma":
+        console.log("O seu nome é Luma");
+        break;
+    default:
+        console.log("O nome não foi encontrado");
+        break;    
+} */
+
