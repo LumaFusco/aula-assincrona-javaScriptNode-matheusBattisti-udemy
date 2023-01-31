@@ -292,14 +292,23 @@ console.log(nomeC);
 
 
 
+/*  ************** PARTE 27 ************** */
+console.log("------ PARTE 27 ------")
+
+const car = {
+    "brand": "BMW",
+    "whells": 4,
+    "type": ["tipo1", "tipo2", "tipo3"]
+};
+
+let jsonToString = JSON.stringify(car);
+console.log(jsonToString);
+/*console.log(jsonToString.type[1]); //aqui erro porque é string*/
 
 
-
-
-
-
-
-
+let stringToJson = JSON.parse(jsonToString);
+console.log(stringToJson);
+console.log(stringToJson.type[1]); //aqui permite acessar porque é json
 
 
 
@@ -342,3 +351,46 @@ function verificaTamanho (arr){
 verificaTamanho(num4);
 verificaTamanho(num5);
 
+console.log("------ Loop com Array ------") 
+
+let frutas = ["banana", "maça", "pera", "morango", "melão"];
+
+for (let i = 0; i < frutas.length; i++){
+    console.log(frutas[i]);
+};
+
+
+
+console.log("------ Split + Loop com Array ------") 
+
+let frase3 = "não desista de você mesma"
+let palavras3 = frase3.split(" "); 
+
+
+for (let i = 0; i < palavras3.length; i++){
+    console.log(palavras3[i]);
+}
+
+
+
+console.log("------ Calculadora: Funções nos Objetos!!! ------") 
+
+let calculadora = {
+    soma: function(a,b) {
+        return a + b;
+    },
+    subtrair: function(a,b) {
+        return a - b;
+    },
+    multiplicar: function(a,b) {
+        return a * b;
+    },
+    dividir: function(a,b) {
+        return a / b;
+    },
+};
+
+console.log(calculadora.soma(3,4));
+console.log(calculadora.subtrair(3,4));
+console.log(calculadora.multiplicar(3,4));
+console.log(calculadora.dividir(3,4));
