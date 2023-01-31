@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <h1>INTRODUÇÃO</h1>
+    <h2> PARTE 1 </h2>
+    <h3>Arrays</h3>
+    <ul>
+        <li>Permite adicional um conjunto de valores a uma variável</li>
+        <li>Deve ser escrito entre colchetes, separando os valores por vírgula.
+            Exemplo:<br>let numbers = [1, 2, 4, 81];</li>
+    </ul>
+
+    <h3>Mais sobre Arrays</h3>
+    <ul>
+        <li>Podemos acessar o array pelo seu indice. Lembrando que o primero é sempre 0. Ou seja, para acessar o
+            primeiro elemento: arr[0]</li>
+    </ul>
+
+
+    <h2> PARTE 2 </h2>
+    <h3>Propriedades</h3>
+    <ul>
+        <li>Propriedades são informações que podem ser verificadas de um valor.</li>
+        <li>Elas aparacem com "nomeDoArray.algumacoisa" ou ainda "nomeDoArray['algumacoisa']</li>
+        <li>Com excessão a NULL e UNDEFINED, todos os valores dem JavaScript tem propriedades.</li>
+        <li>PROPRIEDADE LENGTH: mostra quantos valores há no array. </li>
+    </ul>
+
+
+    <h2> PARTE 3 </h2>
+    <h3>Métodos</h3>
+    <ul>
+        <li>Métodos são propriedade que funcionam como FUNÇÕES.</li>
+        <li>Strings e Arrays contém métodos!</li>
+        <li>Ao serem invocadas, necessitam de (). Exemplo: <br>console.log(nomeDoLet.toUpperCase()); </li>
+    </ul>
+
+
+    <h2> PARTE 4 - Resumo x Comparação </h2>
+    <h3>Como escreve: Propriedades x Metodo</h3>
+    <li>string.propriedade</li>
+    <li>string.metodo()</li>
+    <h3>Como escreve: Objeto x Array</h3>
+    <li>[] = Array</li>
+    <li>{} = Objeto</li>
+
+    <h1>OBJETOS</h1>
+
+    <h2> PARTE 5 </h2>
+    <h3>Objetos</h3>
+    <li>Uma coleção de propriedades, parecido com array.</li>
+    <li>Veja exemplo no console.</li>
+
+
+    <h2> PARTE 6 </h2>
+    <h3>Como incluir e deletar propriedades de um objeto já criado</h3>
+    <li>Veja exemplo no console.</li>
+
+
+    <h2> PARTE 7 </h2>
+    <h3>Podemos copiar todas as propriedades de um objeto para outro: OBJECT.ASSIGN</h3>
+    <li>Através do método OBJECT.ASSIGN unimos dois objetos. <br> EX: Object.assign (objetoA, objetoB)</li>
+    <li>O primeiro objeto do parenteses recebe o segundo</li>
+    <li>Object.assign precisa ter o O maiusculo!</li>
+
+
+    <h2> PARTE 8 </h2>
+    <h3>Mostrar as chave do objeto: OBJECT.KEYS</h3>
+    <li>Através do método OBJECT.KEYS. Veja exemplo no console</li>
+
+
+    <h2> PARTE 9 </h2>
+    <h3>MUTAÇÃO (mutability)</h3>
+    <li>Um objeto pode herdar todas as características do outro, virando uma referência ao mesmo.</li>
+    <li>Para isso basta usar o =, colocando o nome do objeto que irá herdar na frente. Veja exemplo no console.</li>
+    <li>ATENÇÃO: alterações no novo objeto são herdadas do objeto inicial.</li>
+
+
+    <h2> PARTE 10 </h2>
+    <h3>Loops em Array</h3>
+    <li>vide console</li>
+
+    <h1>MÉTODOS DE ARRAY</h1>
+
+    <h2> PARTE 11 </h2>
+    <h3>Métodos de Array: PUSH e POP</h3>
+    <li>Pop = retira | Push = inclui.</li>
+    <li>Funcionam sempre no FINAL do array (último elemento)</li>
+
+
+    <h2> PARTE 12 </h2>
+    <h3>Métodos de Array: SHIFT e UNSHIFT</h3>
+    <li>Funcionam sempre no COMEÇO do array</li>
+    <li>Shift: remove o primeiro</li>
+    <li>Unshift: adiciona um ou mais elementos no começo do array</li>
+
+
+    <h2> PARTE 13 </h2>
+    <h3>Métodos de Array: indexOf e lastIndexOf</h3>
+    <li>indexOf: encontra o indice (posição) de um determinado elemento.</li>
+    <li>lastIndexOf: entra o último índice de um elemento</li>
+    <li>Lembrando que a lista sempre começa com 0</li>
+
+    <h2> PARTE 14 </h2>
+    <h3>Método de Array: SLICE</h3>
+    <li>Retorna um array a partir de outro array</li>
+    <li>O array retornado é determinado pelos parâmetros que são os índices de início e fim do novo array</li>
+    <li>O indice sempre para um na frente!</li>
+    <li>Pode ser feito de trás para frente, usando o sinal de menos</li>
+
+
+    <h2> PARTE 15 </h2>
+    <h3>Método de Array: forEach</h3>
+    <li>Itera cada elemento do array. É como se fosse um for ou while mas é um método pronto do JavaScript.</li>
+    <li>Você declara a variavel no plural e quando a chama no singular o JS entende que o singular é cada um doa
+        elementos. Na verdade pode ser qualquer nome, até um i ele entende o que é.</li>
+
+
+    <h2> PARTE 16 </h2>
+    <h3>Método de Array: INCLUDES</h3>
+    <li>Serve para procurar se há um elemento que você procura dentro do array</li>
+    <li>Permite criar uma lógica, como, seguindo o exemplo do console: if verduras.includes("alface){}</li>
+
+
+    <h2> PARTE 17 </h2>
+    <h3>Método de Array: REVERSE</h3>
+    <li>Entrega o arrya ao contrário</li>
+    <li>Não esquecer do parênteses vazio!</li>
+
+
+    <h1>MÉTODOS STRINGS</h1>
+
+
+    <h2> PARTE 18 </h2>
+    <h3>Método de String: TRIM</h3>
+    <li>Remove tudo que não é uma string</li>
+
+
+    <h2> PARTE 19 </h2>
+    <h3>Método de String: padStart</h3>
+    <li>Inserir caracteres antes da string</li>
+    <li>Primeiro parâmetro: com quantos caracteres a string precisa ficar. Segundo parâmetro: o que será inserido.</li>
+    <li>Existe também o padEnd</li>
+
+
+
+    <h2> PARTE 20 </h2>
+    <h3>Método de String: SPLIT</h3>
+    <li>Serve para dividir uma string em um array.</li>
+    <li>O parâmetro é o separador.</li>
+
+
+
+    <h2> PARTE 21 </h2>
+    <h3>Método de String: JOIN</h3>
+    <li>O contrário do split. Ele junta o array de string com o separdor que você quiser.</li>
+
+
+
+    <h2> PARTE 22 </h2>
+    <h3>Método de String: REPEAT</h3>
+    <li>Repete uma string de acordo com um parâmetro number indicado no parâmetro.</li>
+
+
+    <h1>SOBRE FUNÇÕES</h1>
+
+    <h2> PARTE 23 </h2>
+    <h3>Rest operator</h3>
+    <li>Forma de uma função receber indefinidos parâmetros. Pode receber 5 ou mil e vai saber lidar com isso.</li>
+    <li>O operador REST vai virar um ARRAY.</li>
+    <li>O parâmetro é definido por: ...nome</li>
+
+
+
+    <h2> PARTE 24 </h2>
+    <h3>Destructuring em objetos = TRANSFORMANDO PROPRIEDADES EM VARIÁVEIS!</h3>
+    <li>Permite definir variáveis como propriedades </li>
+    <li> Passo a passo: const, abre e fecha chaves, iguala com o objeto, dentro da chaves escreve o nome das propriedades, desestrutura. </li>
+
+
+
+    <h2> PARTE 25 </h2>
+    <h3>Destructuring em array</h3>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
